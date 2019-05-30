@@ -1,0 +1,21 @@
+.person-card {
+    padding: 5px 5px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.person-card-title
+{
+    display: block;
+}
+
+.share-button {
+    display: block;
+    background: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    float: right;
+    clear: both;
+}

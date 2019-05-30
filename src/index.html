@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/startui.esm.js"></script>
+  <script nomodule src="/build/startui.js"></script>
+
+</head>
+<body>
+  <person-card id="my-person" contact='{ "firstName": "David", "lastName": "Lebee"}' other="yay!"></person-card>
+
+  <script>
+    document.getElementById('my-person').addEventListener('sharing', e => {
+      const contact = e.detail;
+      alert('Shared ' + contact.firstName + ' ' + contact.lastName);
+    });
+  </script>
+
+</body>
+</html>
