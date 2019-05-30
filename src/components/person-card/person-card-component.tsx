@@ -35,6 +35,7 @@ export class PersonCardComponent
         
         return (
             <div class="person-card">
+                <slot name="item-header" />
                 <div class="person-card-title">
                     Hello { 
                         this._contact ? 
@@ -43,6 +44,8 @@ export class PersonCardComponent
                     }
                 </div>
                 <button class="share-button" onClick={() => this.emitSharedEvent()}>Share</button>
+                <br />
+                <slot name="item-footer"/>
             </div>
         );
     }
